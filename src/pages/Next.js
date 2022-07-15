@@ -14,6 +14,8 @@ function Next() {
             <Link to="/login" className='link'>Login</Link>
             <Link to="/home" className='link'>Home</Link>
             <Link to="/todo" className='link'>Todo</Link>
+            <Link to="/todos" className='link'>Todocurd</Link>
+           
           </Nav>
         </Container>
       </Navbar>

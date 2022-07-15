@@ -6,6 +6,9 @@ import { Registration } from './pages/Registration';
 import Home from './pages/Home';
 import Next from './pages/Next';
 import Todo from './pages/Todo';
+import Todocurd from './curd/Todocurd';
+import AddTodo from './slider/AddTodo';
+import ListTodo from './slider/ListTodo';
 
 function App() {
   return (
@@ -19,6 +22,8 @@ function App() {
          <Route path="/login" element={<Login/>}></Route>
          <Route path="/home" element={<Home/>}></Route>
          <Route path="/todo" element={<Todo/>}></Route>
+         <Route path="/todos" element={<Todocurd/>}></Route>
+         
        </Routes>
        
       </BrowserRouter>
