@@ -22,7 +22,7 @@ function Todocurd() {
         if (input.id) {
             dispatch(editTodo(input))
             setInput({ text: "", id: "" })
-              setToggleButton(true)
+              
         } else {
             dispatch(addTodos(input.text))
             setInput({ text: "" })

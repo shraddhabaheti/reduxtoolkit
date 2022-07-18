@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 // import todoslice, { addTodo, editTodo } from "../features/todoslice";
 import {editTodo} from "../features/todoslice"
 const TodoItem = (props) => {
-  let {text,setInput} = props;
+  let {text,setInput,setToggleButton} = props;
   //console.log(text)
   //const [data, setData] = useState("");  
 
@@ -19,10 +19,8 @@ const TodoItem = (props) => {
      
    const editData=()=>{
     setInput({['text']:text, ['id']:props.id})
-    // handleAddTodoCurd(props.id)
-    //  setEditData(name)
-    // setEditId(id)
-    //  setToggleButton(true)
+    
+      setToggleButton(true)
      
    }
    

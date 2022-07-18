@@ -32,19 +32,11 @@ export const todosslice = createSlice({
             //     return todo;
 
             // })
-            // for(let todo of state.todos){
-            //     if (todo.id === action.payload.id) {
-            //         todo.text = action.payload.text
-            //     }
-            // }
-            state.todos.splice((todo)=>{
-               
-                if(todo.id===action.payload.id){
-                    todo.text=action.payload.text
+            for(let todo of state.todos){
+                if (todo.id === action.payload.id) {
+                    todo.text = action.payload.text
                 }
-               
-            })
-
+            }
         }
     }
 })
