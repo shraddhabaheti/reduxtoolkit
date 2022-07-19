@@ -26,8 +26,7 @@ export const todosslice = createSlice({
         editTodo: (state, action) => {
             // state.todos.map((todo) => {
             //     if (todo.id === action.payload.id) {
-            //         // todo.text = action.payload.text
-            //         todo.text = action.payload.text
+            //     todo.text = action.payload.text
             //     }
             //     return todo;
 
@@ -37,7 +36,10 @@ export const todosslice = createSlice({
                     todo.text = action.payload.text
                 }
             }
-        }
+           
+        },
+        
+       
     }
 })
 export const { addTodos, removeTodo, editTodo } = todosslice.actions;

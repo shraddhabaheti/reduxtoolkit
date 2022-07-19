@@ -209,7 +209,7 @@ export function Registration() {
       setTimeout(() => {
         setState({
           loading: false,
-        
+          
 
         })
       }, 2000)
@@ -242,8 +242,7 @@ export function Registration() {
         <br />
         <Button className="btn1" onClick= {onSubmit } type="submit" variant="danger">
           {state.loading ? <CircularProgress  /> : "Register"}
-       
-        </Button>
+         </Button>
       
       </form>
 

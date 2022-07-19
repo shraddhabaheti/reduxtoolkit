@@ -26,18 +26,18 @@ const todoslice = createSlice({
         },
         editTodo: (state, action) => {
            
-             console.log('============>',action.payload)
+             //console.log('============>',action.payload)
              state.todos.map((todo) => {
               
                 if (todo.id === action.payload.id) {
-                  todo.data = action.payload.setData
+                  todo.text = action.payload.text
                 }
               return  todo;
                
             })
            
-        }
-
+        },
+       
        
     },
  })

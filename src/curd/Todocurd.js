@@ -4,8 +4,10 @@ import EditIcon from '@mui/icons-material/Edit';
 import { useState } from 'react';
 import TodoItem from '../pages/TodoItem';
 import { useSelector, useDispatch } from 'react-redux';
-import { addTodos } from '../curd/todosslice'
+import { addTodos, clearList } from '../curd/todosslice'
 import { editTodo, removeTodo } from '../curd/todosslice';
+import { Button } from 'bootstrap';
+//import state from 'sweetalert/typings/modules/state';
 function Todocurd() {
     const [input, setInput] = useState({
         text: ""
@@ -83,6 +85,7 @@ function Todocurd() {
                 ))}
                 {count === 0 && <p></p>}
             </div>
+        
         </div>
     )
 }
